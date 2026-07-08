@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khatib &amp; Alami — Corporate Website Redesign · Ahmed Alzahrani</title>
+  <meta name="description" content="Case study: a strategic corporate website redesign for Khatib & Alami, led by Ahmed Alzahrani — heuristic evaluation, competitive analysis, a rebuilt user journey, and a trust-first visual system." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display:['"Space Grotesk"','sans-serif'], sans:['"IBM Plex Sans"','sans-serif'], mono:['"IBM Plex Mono"','monospace'] },
+      colors: { gold: { DEFAULT:'#B7791F', light:'#CA8A04', deep:'#7C4A0A' } },
+      letterSpacing: { widest2:'0.22em' },
+    } } };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[60] focus:top-4 focus:left-4 focus:bg-slate-900 focus:text-slate-50 focus:px-4 focus:py-2 focus:rounded-md focus:font-medium">Skip to main content</a>
+
+  <!-- ============ NAV ============ -->
+  <nav id="siteNav" aria-label="Primary" class="site-nav sticky top-0 z-40 bg-slate-50/80 backdrop-blur-md">
+    <div class="mx-auto max-w-5xl px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-display text-lg sm:text-xl font-bold tracking-tight text-slate-900 hover:text-gold transition-colors">Ahmed&nbsp;Alzahrani</a>
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="btn btn-ghost text-sm font-medium"><span aria-hidden="true">&larr;</span> Back to Home</a>
+        <a href="index.html#contact" class="btn btn-secondary !px-5 !py-2 text-sm">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ============ HEADER ============ -->
+    <header class="mx-auto max-w-5xl px-6 pt-16 pb-14 sm:pt-24 sm:pb-16">
+      <p class="reveal eyebrow mb-6">Case Study &mdash; Corporate Website Redesign</p>
+      <h1 class="reveal font-display font-bold text-slate-900 tracking-tight leading-[1.05] text-4xl sm:text-6xl">Khatib &amp; Alami</h1>
+      <p class="reveal mt-6 max-w-2xl text-xl leading-relaxed text-slate-600">Rebuilding first-impression credibility for one of the region's largest engineering and architecture firms &mdash; a strategic redesign of its <strong class="text-slate-900 font-medium">corporate website</strong> (not a corporate portal).</p>
+
+      <dl class="reveal mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 text-sm">
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Role</dt><dd class="font-display font-semibold text-slate-900">Lead HCI Specialist</dd></div>
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Context</dt><dd class="font-display font-semibold text-slate-900">Corporate website redesign</dd></div>
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Scope</dt><dd class="font-display font-semibold text-slate-900">IA &middot; UX/UI &middot; Visual system</dd></div>
+      </dl>
+
+      <ul class="reveal mt-6 flex flex-wrap gap-2"><li class="tag">UX/UI Redesign</li><li class="tag">Heuristic Evaluation</li><li class="tag">Competitive Analysis</li><li class="tag">Visual Design</li></ul>
+    </header>
+
+    <!-- Hero comparison placeholder -->
+    <section class="mx-auto max-w-5xl px-6">
+      <figure class="reveal">
+        <div class="ph ratio-3-2">
+          <!-- Replace with the hero before/after or redesigned homepage -->
+          <span class="ph-label">Hero Visual &mdash; Redesigned Homepage</span>
+        </div>
+        <figcaption class="mt-3 font-mono text-xs text-slate-600">Placeholder for the flagship redesign visual.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ THE CHALLENGE ============ -->
+    <section class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-4 reveal"><p class="eyebrow mb-4">01 &mdash; The Challenge</p><h2 class="font-display font-bold text-3xl text-slate-900">A monumental firm, undersold by its own site.</h2></div>
+        <div class="lg:col-span-8 reveal">
+          <div class="prose-hci max-w-none">
+            <p>Khatib &amp; Alami has shaped landmark infrastructure across the region for decades. Its website didn't say so. The existing experience buried that credibility beneath a dated visual language and dense, unstructured pages &mdash; forcing visitors to <strong>work</strong> to understand who the firm was and why it could be trusted.</p>
+            <p>A heuristic-led audit of the old design surfaced consistent, compounding friction:</p>
+            <ul>
+              <li><strong>Buried credibility.</strong> Flagship projects and achievements had weak information scent and were several clicks deep &mdash; the firm's strongest trust signal was its hardest to find.</li>
+              <li><strong>High cognitive load.</strong> Long, flat pages with poor grouping and weak hierarchy made scanning difficult and pushed effort onto the user.</li>
+              <li><strong>Unclear value proposition.</strong> On landing, visitors couldn't quickly answer &ldquo;what do they do, and can I trust them?&rdquo;</li>
+              <li><strong>Inconsistent navigation.</strong> No coherent journey for distinct audiences &mdash; prospective clients, partners, and talent all met the same undifferentiated path.</li>
+              <li><strong>Eroded perceived quality.</strong> An outdated interface undercut the credibility of a world-class engineering practice.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Before / After placeholders -->
+      <div class="reveal mt-16 grid md:grid-cols-2 gap-6">
+        <figure><div class="ph ratio-4-3"><span class="ph-tag ph-tag--before">Before</span><span class="ph-label">Original Homepage</span></div><figcaption class="mt-3 font-mono text-xs text-slate-600">Insert original screenshot here.</figcaption></figure>
+        <figure><div class="ph ratio-4-3"><span class="ph-tag ph-tag--after">After</span><span class="ph-label">Redesigned Homepage</span></div><figcaption class="mt-3 font-mono text-xs text-slate-600">Insert redesigned screenshot here.</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- ============ STRATEGIC APPROACH ============ -->
+    <section class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div class="lg:col-span-4 reveal"><p class="eyebrow mb-4">02 &mdash; Strategic Approach</p><h2 class="font-display font-bold text-3xl text-slate-900">Diagnose with evidence, not opinion.</h2></div>
+          <div class="lg:col-span-8 reveal">
+            <div class="prose-hci max-w-none">
+              <p>Before proposing a single layout, I established <strong>why</strong> the current site underperformed &mdash; grounding every later decision in defensible reasoning.</p>
+              <ul>
+                <li><strong>Heuristic evaluation.</strong> I assessed the experience against Nielsen's ten usability heuristics, isolating breakdowns in visibility of system status, match between system and the real world, consistency, recognition over recall, and aesthetic-and-minimalist design.</li>
+                <li><strong>Competitive &amp; comparative analysis.</strong> I benchmarked leading global and regional engineering, architecture, and consulting firms to map category conventions, user expectations, and clear opportunities to differentiate on credibility.</li>
+                <li><strong>Content audit &amp; prioritization.</strong> I inventoried existing content and ranked it by what actually drives a decision-maker's trust &mdash; then cut, merged, and re-sequenced around it.</li>
+                <li><strong>Design principles.</strong> The findings converged on three principles that governed the rest of the project: <em>clarity</em>, <em>credibility</em>, and <em>hierarchy</em>.</li>
+              </ul>
+            </div>
+            <div class="mt-10"><div class="ph ratio-16-10"><span class="ph-label">Heuristic Audit / Competitive Matrix</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXECUTION ============ -->
+    <section class="border-t border-slate-200">
+      <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div class="lg:col-span-4 reveal"><p class="eyebrow mb-4">03 &mdash; Execution</p><h2 class="font-display font-bold text-3xl text-slate-900">A rebuilt journey and a trust-first visual system.</h2></div>
+          <div class="lg:col-span-8 reveal">
+            <div class="prose-hci max-w-none">
+              <p><strong>User journey &amp; information architecture.</strong> I restructured the site around a clear narrative &mdash; capability, proof, and contact &mdash; and surfaced flagship sectors and projects early so credibility is felt within the first screens. Progressive disclosure keeps each page scannable, letting visitors go deeper only when they choose to.</p>
+              <p><strong>Visual design.</strong> I introduced a confident typographic hierarchy, a disciplined grid, and generous whitespace to lower cognitive load and signal quality. Photography of landmark projects became a deliberate trust device rather than decoration, giving the firm's scale immediate, visual proof.</p>
+              <p><strong>Consistency &amp; accessibility.</strong> A componentized system enforced consistency across the site and improved learnability, while WCAG-aligned contrast, structure, and responsive layouts extended the experience cleanly across devices.</p>
+            </div>
+            <div class="mt-10 grid sm:grid-cols-2 gap-6">
+              <div class="ph ratio-4-3"><span class="ph-label">User Journey / IA Map</span></div>
+              <div class="ph ratio-4-3"><span class="ph-label">Visual System &mdash; Components</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BUSINESS IMPACT ============ -->
+    <section class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div class="lg:col-span-4 reveal"><p class="eyebrow mb-4">04 &mdash; Business Impact</p><h2 class="font-display font-bold text-3xl text-slate-900">Credibility, restored on arrival.</h2></div>
+          <div class="lg:col-span-8 reveal">
+            <div class="prose-hci max-w-none">
+              <p>The redesign reframed the firm's decades of work as its primary asset &mdash; legible at a glance and impossible to miss. The value proposition now lands in seconds, the user journey guides distinct audiences with intent, and the visual language finally matches the calibre of the practice behind it.</p>
+              <p>The outcome is a corporate website that does the job a corporate website should: it builds <strong>client trust</strong> before a conversation ever begins.</p>
+            </div>
+            <!-- Replace the placeholder figures below with your real, measured results -->
+            <div class="mt-10 grid sm:grid-cols-3 gap-8">
+              <div class="stat"><div class="stat-num">&mdash;%</div><div class="stat-label">Faster time-to-key-information</div></div>
+              <div class="stat"><div class="stat-num">&mdash;%</div><div class="stat-label">Increase in engagement / dwell time</div></div>
+              <div class="stat"><div class="stat-num">&mdash;%</div><div class="stat-label">Lift in qualified inquiries</div></div>
+            </div>
+            <p class="mt-4 font-mono text-xs text-slate-600">Placeholder metrics &mdash; replace with your measured results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEXT / CTA ============ -->
+    <section class="border-t border-slate-200">
+      <div class="mx-auto max-w-5xl px-6 py-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div><p class="eyebrow mb-2">Next case study</p><a href="midan.html" class="font-display font-bold text-2xl text-slate-900 hover:text-gold transition-colors">Midan &mdash; Talent Management Platform &rarr;</a></div>
+        <a href="index.html#work" class="btn btn-secondary">All work</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="mx-auto max-w-5xl px-6 py-16 flex flex-col sm:flex-row gap-6 justify-between items-start sm:items-center">
+      <div><p class="font-display font-semibold text-slate-100 text-lg">Ahmed Alzahrani</p><p class="font-mono text-xs text-slate-500 mt-1">HCI Specialist &middot; Product &amp; UX/UI Designer</p></div>
+      <a href="mailto:ahmedalzahrani558@gmail.com" class="btn btn-primary">Get in touch <span class="arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('siteNav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const items = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) { items.forEach(el => el.classList.add('in')); }
+    else { const io = new IntersectionObserver((es)=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), { threshold:.12, rootMargin:'0px 0px -40px 0px' }); items.forEach(el=>io.observe(el)); }
+  </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ahmed Alzahrani — HCI Specialist, Product &amp; UX/UI Designer</title>
+  <meta name="description" content="Ahmed Alzahrani — Human-Computer Interaction specialist and product designer. Honors graduate of Umm Al-Qura University and part of the first-ever Bachelor's in HCI cohort in the Middle East." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        fontFamily: {
+          display: ['"Space Grotesk"','ui-sans-serif','system-ui','sans-serif'],
+          sans:    ['"IBM Plex Sans"','ui-sans-serif','system-ui','sans-serif'],
+          mono:    ['"IBM Plex Mono"','ui-monospace','monospace'],
+        },
+        colors: { gold: { DEFAULT:'#B7791F', light:'#CA8A04', deep:'#7C4A0A' } },
+        letterSpacing: { widest2: '0.22em' },
+      } },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[60] focus:top-4 focus:left-4 focus:bg-slate-900 focus:text-slate-50 focus:px-4 focus:py-2 focus:rounded-md focus:font-medium">Skip to main content</a>
+
+  <!-- ============ NAV ============ -->
+  <nav id="siteNav" aria-label="Primary" class="site-nav sticky top-0 z-40 bg-slate-50/80 backdrop-blur-md">
+    <div class="mx-auto max-w-6xl px-6 h-20 flex items-center justify-between">
+      <a href="#top" class="font-display text-lg sm:text-xl font-bold tracking-tight text-slate-900 hover:text-gold transition-colors">Ahmed&nbsp;Alzahrani</a>
+
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="#top" class="nav-link" aria-current="page">Home</a></li>
+        <li><a href="#methodology" class="nav-link">Methodology</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#contact" class="btn btn-secondary !px-5 !py-2 text-sm">Contact</a></li>
+      </ul>
+
+      <details class="nav-mobile md:hidden">
+        <summary class="btn btn-secondary !px-4 !py-2 text-sm" aria-label="Open menu">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          Menu
+        </summary>
+        <ul class="font-medium text-sm">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#methodology">Methodology</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </details>
+    </div>
+  </nav>
+
+  <main id="main">
+    <span id="top" aria-hidden="true"></span>
+
+    <!-- ============ HERO ============ -->
+    <header class="mx-auto max-w-6xl px-6 pt-20 pb-24 sm:pt-28 sm:pb-32">
+      <p class="reveal eyebrow mb-8">HCI Specialist &nbsp;/&nbsp; Product Designer &nbsp;/&nbsp; UX/UI Designer</p>
+
+      <h1 class="reveal font-display font-bold text-slate-900 tracking-tight leading-[1.04] text-5xl sm:text-6xl lg:text-7xl max-w-4xl">
+        Human-Computer Interaction,<br class="hidden sm:block" />
+        designed with <span class="text-gold">scientific intent.</span>
+      </h1>
+
+      <p class="reveal mt-8 max-w-2xl text-lg sm:text-xl leading-relaxed text-slate-600">
+        I turn research into interfaces people understand without being taught. Graduated with
+        <strong class="text-slate-900 font-medium">Honors in HCI from Umm Al-Qura University</strong> — proudly part of the
+        <strong class="text-slate-900 font-medium">first-ever graduating class for a Bachelor's in HCI in the Middle East.</strong>
+      </p>
+
+      <div class="reveal mt-11 flex flex-wrap items-center gap-4">
+        <a href="#work" class="btn btn-primary">View Case Studies <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a href="#methodology" class="btn btn-ghost font-medium">My methodology</a>
+      </div>
+
+      <dl class="reveal mt-20 grid grid-cols-1 sm:grid-cols-3 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 text-sm">
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Degree</dt><dd class="font-display font-semibold text-slate-900">B.S. HCI &mdash; Honors</dd></div>
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Institution</dt><dd class="font-display font-semibold text-slate-900">Umm Al-Qura University</dd></div>
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Milestone</dt><dd class="font-display font-semibold text-slate-900">First HCI cohort &middot; Middle East</dd></div>
+      </dl>
+    </header>
+
+    <!-- ============ DESIGN METHODOLOGY ============ -->
+    <section id="methodology" class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-6xl px-6 py-24 sm:py-32">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-20">
+          <div class="lg:col-span-5 reveal">
+            <p class="eyebrow mb-6">01 &mdash; Strategic Approach</p>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl leading-tight text-slate-900">My Design Methodology</h2>
+          </div>
+
+          <div class="lg:col-span-7 reveal">
+            <div class="prose-hci max-w-none">
+              <p>I treat design as an applied science, not decoration. Every screen I ship is a <strong>hypothesis</strong> about how people think, decide, and act &mdash; then validated against evidence rather than taste. I work from research and behavioral data, so decisions are traceable to a reason, not a mood board.</p>
+              <p>My process is <strong>human-centered</strong>: I map the user's complete journey alongside the system's architecture before touching a single pixel. I stress-test flows against established <strong>usability</strong> heuristics, engineer motivation with <strong>Fogg's Behavior Model (B = MAP)</strong> so the right action happens at the right moment, and design for the full range of human ability through <strong>inclusive design</strong> &mdash; accessibility treated as a baseline, never an afterthought.</p>
+              <p>The result is interfaces that reduce cognitive load, earn trust quickly, and hold up under real use.</p>
+            </div>
+
+            <ul class="mt-10 divide-y divide-slate-200 border-y border-slate-200">
+              <li class="py-5 grid sm:grid-cols-[11rem_1fr] gap-2 sm:gap-6"><span class="font-mono text-sm font-semibold text-slate-700">Usability</span><span class="text-slate-700 leading-relaxed">Heuristic evaluation and testing settle assumptions before a single user meets them.</span></li>
+              <li class="py-5 grid sm:grid-cols-[11rem_1fr] gap-2 sm:gap-6"><span class="font-mono text-sm font-semibold text-slate-700">Fogg&nbsp;B=MAP</span><span class="text-slate-700 leading-relaxed">Behavior is engineered where motivation, ability, and a timely prompt intersect.</span></li>
+              <li class="py-5 grid sm:grid-cols-[11rem_1fr] gap-2 sm:gap-6"><span class="font-mono text-sm font-semibold text-slate-700">Inclusive&nbsp;Design</span><span class="text-slate-700 leading-relaxed">Designed for the widest range of ability, literacy, language, and context of use.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-24">
+          <p class="reveal font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-8">Core competencies</p>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <article class="reveal card p-7"><h3 class="font-display font-semibold text-lg text-slate-900">Product Design</h3><p class="mt-3 text-slate-600 leading-relaxed text-[0.95rem]">End-to-end ownership from problem framing and research through to shipped, tested interfaces.</p></article>
+            <article class="reveal card p-7"><h3 class="font-display font-semibold text-lg text-slate-900">Behavioral Design</h3><p class="mt-3 text-slate-600 leading-relaxed text-[0.95rem]">Applying psychology and behavioral economics, utilizing frameworks like Fogg's Behavior Model, to shape sustainable user habits and drive meaningful engagement.</p></article>
+            <article class="reveal card p-7"><h3 class="font-display font-semibold text-lg text-slate-900">Inclusive Design</h3><p class="mt-3 text-slate-600 leading-relaxed text-[0.95rem]">Building for the full range of human ability &mdash; accessibility treated as a baseline, not a feature.</p></article>
+            <article class="reveal card p-7"><h3 class="font-display font-semibold text-lg text-slate-900">Data Visualization</h3><p class="mt-3 text-slate-600 leading-relaxed text-[0.95rem]">Turning dense information into structures the eye can read at a glance and trust.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK GRID ============ -->
+    <section id="work" class="border-t border-slate-200">
+      <div class="mx-auto max-w-6xl px-6 py-24 sm:py-32">
+        <div class="reveal max-w-2xl">
+          <p class="eyebrow mb-6">02 &mdash; Selected Work</p>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl leading-tight text-slate-900">Two selected case studies, from redesign to full ecosystem.</h2>
+        </div>
+
+        <div class="mt-16 grid md:grid-cols-2 gap-8">
+          <article class="reveal card p-8 sm:p-10 flex flex-col">
+            <div class="ph ratio-16-10 mb-8">
+              <!-- Replace with hero image: <img src="..." alt="Khatib & Alami redesign" class="w-full h-full object-cover rounded-2xl" /> -->
+              <span class="ph-label">Project Cover &mdash; Khatib &amp; Alami</span>
+            </div>
+            <p class="font-mono text-xs uppercase tracking-widest2 text-slate-600">Corporate Website Redesign</p>
+            <h3 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-slate-900">Khatib &amp; Alami</h3>
+            <ul class="mt-5 flex flex-wrap gap-2"><li class="tag">UX/UI Redesign</li><li class="tag">Heuristic Evaluation</li><li class="tag">Visual Design</li></ul>
+            <p class="mt-5 text-slate-600 leading-relaxed flex-1">A strategic UX/UI overhaul of the firm's corporate website built to earn client trust by putting the company's massive achievements front and centre. I reshaped the user journey and applied robust visual-design principles so credibility is felt within seconds of arrival.</p>
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a href="khatib-alami.html" class="btn btn-primary">Read Full Case Study <span class="arrow" aria-hidden="true">&rarr;</span></a>
+              <a href="https://ghalialharbi989-wq.github.io/Khatib-Alami/#" target="_blank" rel="noopener" class="btn btn-secondary">View Interactive Demo</a>
+            </div>
+          </article>
+
+          <article class="reveal card p-8 sm:p-10 flex flex-col">
+            <div class="ph ratio-16-10 mb-8">
+              <!-- Replace with hero image: <img src="..." alt="Midan platform" class="w-full h-full object-cover rounded-2xl" /> -->
+              <span class="ph-label">Project Cover &mdash; Midan</span>
+            </div>
+            <p class="font-mono text-xs uppercase tracking-widest2 text-slate-600">Talent Management Platform &middot; Al Wehda Club</p>
+            <h3 class="mt-2 font-display font-bold text-2xl sm:text-3xl text-slate-900">Midan</h3>
+            <ul class="mt-5 flex flex-wrap gap-2"><li class="tag">Product Design</li><li class="tag">System Architecture</li><li class="tag">Inclusive Design</li></ul>
+            <p class="mt-5 text-slate-600 leading-relaxed flex-1">An 8-month rigorous project designing a comprehensive multi-sided digital ecosystem for coaches, players, and administrators. Each role gets an interface tuned to its needs, held together by role-based usability and inclusive design across the entire platform.</p>
+            <div class="mt-8"><a href="midan.html" class="btn btn-primary">Read Full Case Study <span class="arrow" aria-hidden="true">&rarr;</span></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CONTACT / FOOTER ============ -->
+  <footer id="contact" class="bg-slate-900 text-slate-300">
+    <div class="mx-auto max-w-6xl px-6 py-24 sm:py-28">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-end">
+        <div>
+          <p class="eyebrow mb-6" style="color:var(--gold)">03 &mdash; Get in touch</p>
+          <h2 class="font-display font-bold text-4xl sm:text-5xl leading-tight text-slate-50">Open to new opportunities.</h2>
+          <p class="mt-5 text-lg leading-relaxed text-slate-300 max-w-md">Let's connect and design something worth using.</p>
+          <a href="mailto:ahmedalzahrani558@gmail.com" class="group inline-flex items-center gap-2 mt-8 font-display text-xl sm:text-2xl text-slate-50 hover:text-gold transition-colors">ahmedalzahrani558@gmail.com <span aria-hidden="true" class="transition-transform duration-300 group-hover:translate-x-1">&rarr;</span></a>
+        </div>
+        <nav aria-label="Social and contact links" class="lg:justify-self-end">
+          <ul class="flex flex-wrap gap-x-8 gap-y-4 font-medium">
+            <li><a href="https://www.linkedin.com/in/%D8%A3%D8%AD%D9%85%D8%AF-%D8%A7%D9%84%D8%B2%D9%87%D8%B1%D8%A7%D9%86%D9%8A-b67009271/" target="_blank" rel="noopener" class="nav-link !text-slate-300 hover:!text-slate-50">LinkedIn <span aria-hidden="true" class="text-gold">&#8599;</span></a></li>
+            <li><a href="mailto:ahmedalzahrani558@gmail.com" class="nav-link !text-slate-300 hover:!text-slate-50">Email <span aria-hidden="true" class="text-gold">&#8599;</span></a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mt-20 pt-8 border-t border-slate-800 flex flex-col sm:flex-row gap-4 justify-between text-sm text-slate-500">
+        <p class="font-display font-semibold text-slate-400">Ahmed Alzahrani</p>
+        <p class="font-mono text-xs">HCI Specialist &middot; Product &amp; UX/UI Designer &middot; Made with intent.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('siteNav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const items = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) { items.forEach(el => el.classList.add('in')); }
+    else {
+      const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12, rootMargin: '0px 0px -40px 0px' });
+      items.forEach(el => io.observe(el));
+    }
+
+    // ScrollSpy — highlight the Navbar link for the section currently in view
+    const navLinks = document.querySelectorAll('#siteNav .nav-link[href^="#"]');
+    const setActiveLink = (sectionId) => {
+      navLinks.forEach(link => {
+        if (link.getAttribute('href') === `#${sectionId}`) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    const spySections = [
+      { id: 'top', el: document.querySelector('header') },
+      { id: 'work', el: document.getElementById('work') },
+      { id: 'methodology', el: document.getElementById('methodology') },
+    ].filter(s => s.el);
+
+    if ('IntersectionObserver' in window && spySections.length) {
+      const spy = new IntersectionObserver(
+        (entries) => entries.forEach(e => { if (e.isIntersecting) setActiveLink(e.target.dataset.navId); }),
+        { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
+      );
+      spySections.forEach(s => { s.el.dataset.navId = s.id; spy.observe(s.el); });
+    }
+  </script>
+</body>
+</html>
