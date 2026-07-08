@@ -1,0 +1,189 @@
+/* ============================================================
+   Ahmed Alzahrani — Portfolio
+   styles.css · shared design system for all pages
+   Tailwind (CDN) handles layout/utilities; this file owns
+   design tokens, reusable components, animation & a11y.
+   ============================================================ */
+
+/* ---------- Design tokens ---------- */
+:root {
+  --bg:        #F8FAFC;  /* slate-50  */
+  --surface:   #FFFFFF;
+  --ink:       #0F172A;  /* slate-900 */
+  --muted:     #475569;  /* slate-600 — WCAG-safe body/labels on light */
+  --line:      #E2E8F0;  /* slate-200 */
+  --line-soft: #EEF2F6;
+  --gold:      #B7791F;  /* honors gold — the single accent */
+  --gold-light:#CA8A04;
+  --gold-deep: #7C4A0A;
+  --ease:      cubic-bezier(.22,.61,.36,1);
+}
+
+/* ---------- Base ---------- */
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+
+body {
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display { font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif; }
+.font-mono    { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+/* Consistent, visible keyboard focus everywhere */
+:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+::selection { background: rgba(183,121,31,.22); color: var(--ink); }
+
+/* ---------- Eyebrow / kicker label ---------- */
+.eyebrow {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color: var(--gold-deep);
+}
+
+/* ---------- Buttons (shared across every page) ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border-radius: 9999px;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color .3s var(--ease), color .3s var(--ease),
+              box-shadow .3s var(--ease), transform .3s var(--ease), border-color .3s var(--ease);
+}
+.btn .arrow { transition: transform .3s var(--ease); }
+.btn:hover .arrow { transform: translateX(4px); }
+
+.btn-primary { background: var(--ink); color: #F8FAFC; box-shadow: 0 1px 2px rgba(15,23,42,.10); }
+.btn-primary:hover { background: var(--gold); color: var(--ink); box-shadow: 0 10px 24px rgba(15,23,42,.14); }
+
+.btn-secondary { border: 1px solid var(--ink); color: var(--ink); background: transparent; }
+.btn-secondary:hover { background: var(--ink); color: #F8FAFC; }
+
+.btn-ghost { color: var(--muted); padding-left: .5rem; padding-right: .5rem; }
+.btn-ghost:hover { color: var(--ink); }
+
+/* ---------- Nav underline hover ---------- */
+.nav-link { position: relative; color: var(--muted); text-decoration: none; transition: color .3s var(--ease); }
+.nav-link:hover, .nav-link[aria-current="page"] { color: var(--ink); }
+.nav-link::after {
+  content: ""; position: absolute; left: 0; bottom: -6px; height: 1.5px; width: 100%;
+  background: var(--gold); transform: scaleX(0); transform-origin: right; transition: transform .35s var(--ease);
+}
+.nav-link:hover::after, .nav-link:focus-visible::after, .nav-link[aria-current="page"]::after {
+  transform: scaleX(1); transform-origin: left;
+}
+
+/* Sticky nav gets a hairline once the page is scrolled (toggled by JS) */
+.site-nav { transition: border-color .3s var(--ease), background-color .3s var(--ease); border-bottom: 1px solid transparent; }
+.site-nav.scrolled { border-bottom-color: var(--line); }
+
+/* ---------- Mobile disclosure menu (no-JS, uses <details>) ---------- */
+.nav-mobile summary { list-style: none; cursor: pointer; }
+.nav-mobile summary::-webkit-details-marker { display: none; }
+.nav-mobile > ul {
+  position: absolute; right: 1.5rem; top: 4.75rem; z-index: 50;
+  min-width: 13rem; padding: .5rem;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 1rem;
+  box-shadow: 0 20px 40px -12px rgba(15,23,42,.18);
+}
+.nav-mobile > ul a { display: block; padding: .75rem 1rem; border-radius: .625rem; color: var(--ink); text-decoration: none; }
+.nav-mobile > ul a:hover { background: var(--bg); }
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1.5rem;
+  transition: box-shadow .5s var(--ease), transform .3s var(--ease), border-color .3s var(--ease);
+}
+.card:hover { transform: translateY(-4px); border-color: var(--gold); box-shadow: 0 24px 48px -16px rgba(15,23,42,.20); }
+
+/* ---------- Tags ---------- */
+.tag {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .75rem;
+  border-radius: 9999px;
+  background: #F1F5F9;
+  color: var(--muted);
+  padding: .375rem .75rem;
+  white-space: nowrap;
+}
+
+/* ---------- Readable long-form case-study prose ---------- */
+.prose-hci { color: var(--muted); font-size: 1.125rem; line-height: 1.8; max-width: 65ch; }
+.prose-hci p { margin-bottom: 1.35rem; }
+.prose-hci strong { color: var(--ink); font-weight: 600; }
+.prose-hci ul { margin: 0 0 1.35rem; padding: 0; list-style: none; }
+.prose-hci ul li { position: relative; padding-left: 1.6rem; margin-bottom: .75rem; }
+.prose-hci ul li::before {
+  content: ""; position: absolute; left: 0; top: .7rem;
+  width: 7px; height: 7px; border-radius: 9999px; background: var(--gold);
+}
+
+/* ---------- Image / diagram placeholders ---------- */
+.ph {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  border: 1.5px dashed #CBD5E1;
+  border-radius: 1rem;
+  background-color: #F8FAFC;
+  background-image: radial-gradient(circle at 1px 1px, #CBD5E1 1px, transparent 0);
+  background-size: 22px 22px;
+  color: var(--muted);
+  text-align: center;
+  transition: border-color .3s var(--ease), background-color .3s var(--ease);
+}
+.ph:hover { border-color: var(--gold); }
+.ph-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: .75rem; text-transform: uppercase; letter-spacing: .16em; color: var(--muted);
+  padding: 1.25rem;
+}
+.ph-tag {
+  position: absolute; top: .75rem; left: .75rem;
+  font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: .625rem;
+  text-transform: uppercase; letter-spacing: .14em;
+  padding: .25rem .6rem; border-radius: 9999px;
+}
+.ph-tag--before { background: #E2E8F0; color: #334155; }
+.ph-tag--after  { background: var(--gold); color: var(--ink); }
+
+/* Aspect helpers */
+.ratio-16-10 { aspect-ratio: 16 / 10; }
+.ratio-4-3   { aspect-ratio: 4 / 3; }
+.ratio-3-2   { aspect-ratio: 3 / 2; }
+
+/* ---------- Stat band ---------- */
+.stat { border-left: 2px solid var(--gold); padding-left: 1.25rem; }
+.stat-num { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 2.25rem; color: var(--ink); line-height: 1; }
+.stat-label { color: var(--muted); font-size: .95rem; margin-top: .5rem; }
+
+/* ---------- Scroll reveal (progressive enhancement) ---------- */
+.reveal { opacity: 0; transform: translateY(18px); }
+.reveal.in {
+  opacity: 1; transform: none;
+  transition: opacity .7s var(--ease), transform .7s var(--ease);
+}
+
+/* ---------- Reduced-motion: respect user preference ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}

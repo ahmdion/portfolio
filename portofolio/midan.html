@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midan — Multi-sided Talent Management Platform · Ahmed Alzahrani</title>
+  <meta name="description" content="Case study: Midan, an 8-month product lifecycle designing a multi-sided talent-management ecosystem for Al Wehda Club — role-based usability and inclusive design for coaches, players, and administrators, led by Ahmed Alzahrani." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { display:['"Space Grotesk"','sans-serif'], sans:['"IBM Plex Sans"','sans-serif'], mono:['"IBM Plex Mono"','monospace'] },
+      colors: { gold: { DEFAULT:'#B7791F', light:'#CA8A04', deep:'#7C4A0A' } },
+      letterSpacing: { widest2:'0.22em' },
+    } } };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:z-[60] focus:top-4 focus:left-4 focus:bg-slate-900 focus:text-slate-50 focus:px-4 focus:py-2 focus:rounded-md focus:font-medium">Skip to main content</a>
+
+  <!-- ============ NAV ============ -->
+  <nav id="siteNav" aria-label="Primary" class="site-nav sticky top-0 z-40 bg-slate-50/80 backdrop-blur-md">
+    <div class="mx-auto max-w-5xl px-6 h-20 flex items-center justify-between">
+      <a href="index.html" class="font-display text-lg sm:text-xl font-bold tracking-tight text-slate-900 hover:text-gold transition-colors">Ahmed&nbsp;Alzahrani</a>
+      <div class="flex items-center gap-3">
+        <a href="index.html" class="btn btn-ghost text-sm font-medium"><span aria-hidden="true">&larr;</span> Back to Home</a>
+        <a href="index.html#contact" class="btn btn-secondary !px-5 !py-2 text-sm">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ============ HEADER ============ -->
+    <header class="mx-auto max-w-5xl px-6 pt-16 pb-14 sm:pt-24 sm:pb-16">
+      <p class="reveal eyebrow mb-6">Case Study &mdash; Talent Management Platform</p>
+      <h1 class="reveal font-display font-bold text-slate-900 tracking-tight leading-[1.05] text-4xl sm:text-6xl">Midan</h1>
+      <p class="reveal mt-6 max-w-2xl text-xl leading-relaxed text-slate-600">A comprehensive, multi-sided digital ecosystem for <strong class="text-slate-900 font-medium">Al Wehda Club</strong> &mdash; one platform where coaches, players, and administrators each operate from an interface tuned to their role.</p>
+
+      <dl class="reveal mt-12 grid grid-cols-1 sm:grid-cols-3 gap-px overflow-hidden rounded-2xl border border-slate-200 bg-slate-200 text-sm">
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Role</dt><dd class="font-display font-semibold text-slate-900">Lead HCI Specialist &amp; Product Designer</dd></div>
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Client</dt><dd class="font-display font-semibold text-slate-900">Al Wehda Club</dd></div>
+        <div class="bg-slate-50 p-6"><dt class="font-mono text-xs uppercase tracking-widest2 text-slate-600 mb-2">Timeline</dt><dd class="font-display font-semibold text-slate-900">8-month rigorous lifecycle</dd></div>
+      </dl>
+
+      <ul class="reveal mt-6 flex flex-wrap gap-2"><li class="tag">Product Design</li><li class="tag">System Architecture</li><li class="tag">Role-based Usability</li><li class="tag">Inclusive Design</li></ul>
+    </header>
+
+    <!-- Hero placeholder -->
+    <section class="mx-auto max-w-5xl px-6">
+      <figure class="reveal">
+        <div class="ph ratio-3-2"><span class="ph-label">Hero Visual &mdash; Midan Platform</span></div>
+        <figcaption class="mt-3 font-mono text-xs text-slate-600">Placeholder for the flagship platform visual.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ ECOSYSTEM CONTEXT ============ -->
+    <section class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+        <div class="lg:col-span-4 reveal"><p class="eyebrow mb-4">01 &mdash; The Ecosystem Context</p><h2 class="font-display font-bold text-3xl text-slate-900">One club, several interlocking workflows.</h2></div>
+        <div class="lg:col-span-8 reveal">
+          <div class="prose-hci max-w-none">
+            <p>A club's talent operation isn't a single workflow &mdash; it's several that constantly feed one another. A coach's evaluation becomes a player's development plan, which becomes an administrator's record. When those functions live in disconnected spreadsheets and single-purpose tools, the picture <strong>fragments</strong>: data is duplicated, context is lost, and no one sees the whole.</p>
+            <p>Midan's mandate was to replace that fragmentation with a single, coherent <strong>multi-sided ecosystem</strong> &mdash; a shared source of truth that still presents each participant with only what is relevant to them. The design challenge was not one product, but three tightly coupled experiences that must stay consistent without collapsing into a one-size-fits-all interface.</p>
+          </div>
+          <div class="mt-10"><div class="ph ratio-16-10"><span class="ph-label">Ecosystem Overview Diagram</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MULTI-SIDED USERS ============ -->
+    <section class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <div class="reveal max-w-2xl"><p class="eyebrow mb-4">02 &mdash; Understanding the Users</p><h2 class="font-display font-bold text-3xl text-slate-900">Three roles, three mental models.</h2></div>
+        <p class="reveal mt-6 prose-hci">Through interviews, role modeling, and journey mapping across the club, I defined each side of the ecosystem by the job it needed to do &mdash; and, critically, where those jobs shared data and where they diverged.</p>
+
+        <div class="reveal mt-12 grid md:grid-cols-3 gap-6">
+          <article class="card p-8"><p class="font-mono text-xs uppercase tracking-widest2 text-gold-deep mb-3">Coaches</p><h3 class="font-display font-semibold text-xl text-slate-900">Evaluate &amp; develop</h3><p class="mt-3 text-slate-600 leading-relaxed">Assess performance, build training plans, track progress over time, and deliver structured, comparable feedback &mdash; quickly, often pitch-side.</p></article>
+          <article class="card p-8"><p class="font-mono text-xs uppercase tracking-widest2 text-gold-deep mb-3">Players</p><h3 class="font-display font-semibold text-xl text-slate-900">See &amp; grow</h3><p class="mt-3 text-slate-600 leading-relaxed">Understand their development path, feedback, goals, and schedule with clarity and agency &mdash; motivation sustained by visible progress.</p></article>
+          <article class="card p-8"><p class="font-mono text-xs uppercase tracking-widest2 text-gold-deep mb-3">Administrators</p><h3 class="font-display font-semibold text-xl text-slate-900">Oversee &amp; govern</h3><p class="mt-3 text-slate-600 leading-relaxed">Maintain oversight, data integrity, permissions, and reporting across the whole operation, with the controls governance demands.</p></article>
+        </div>
+        <div class="reveal mt-10"><div class="ph ratio-16-10"><span class="ph-label">Cross-role Journey Map</span></div></div>
+      </div>
+    </section>
+
+    <!-- ============ SYSTEM ARCHITECTURE ============ -->
+    <section class="border-t border-slate-200">
+      <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div class="lg:col-span-4 reveal"><p class="eyebrow mb-4">03 &mdash; System Architecture</p><h2 class="font-display font-bold text-3xl text-slate-900">One source of truth, many lenses.</h2></div>
+          <div class="lg:col-span-8 reveal">
+            <div class="prose-hci max-w-none">
+              <p>The architecture rests on a <strong>shared data model</strong> governed by <strong>role-based access control</strong>. Every participant reads from and writes to the same underlying record, but each role sees a distinct, purpose-built lens over it &mdash; eliminating duplication while preserving a single, trustworthy truth.</p>
+              <ul>
+                <li><strong>Role-tuned dashboards.</strong> Each role's home surfaces only what is actionable for them, cutting cognitive load and decision friction.</li>
+                <li><strong>Permission &amp; governance layers.</strong> Sensitive data and administrative controls are gated by role, satisfying the club's oversight requirements without cluttering everyday use.</li>
+                <li><strong>Consistency for learnability.</strong> Shared components and patterns keep the system coherent across roles; interfaces diverge only where the job genuinely demands it.</li>
+                <li><strong>Engineered engagement.</strong> Applying <strong>Fogg's Behavior Model (B = MAP)</strong>, I placed timely prompts where motivation and ability meet &mdash; nudging players to log progress and coaches to close feedback loops, so the platform stays alive with current data.</li>
+              </ul>
+            </div>
+            <div class="mt-10 grid sm:grid-cols-2 gap-6">
+              <div class="ph ratio-4-3"><span class="ph-label">System Architecture Diagram</span></div>
+              <div class="ph ratio-4-3"><span class="ph-label">Role &amp; Permission Matrix</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INCLUSIVE DESIGN ============ -->
+    <section class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-20 sm:py-28">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-16">
+          <div class="lg:col-span-4 reveal"><p class="eyebrow mb-4">04 &mdash; Inclusive Design</p><h2 class="font-display font-bold text-3xl text-slate-900">Usable by everyone in the ecosystem.</h2></div>
+          <div class="lg:col-span-8 reveal">
+            <div class="prose-hci max-w-none">
+              <p>Midan's users span a wide range of ability, age, and digital literacy &mdash; from veteran administrators to young athletes. Inclusive design wasn't a final pass; it shaped the system from the start.</p>
+              <ul>
+                <li><strong>Arabic-first &amp; RTL-aware.</strong> Layouts, components, and typography were designed for right-to-left reading and bilingual use, not retrofitted onto a left-to-right assumption.</li>
+                <li><strong>Range of digital literacy.</strong> Plain language, progressive disclosure, and forgiving, recoverable flows keep the platform approachable for first-time and expert users alike.</li>
+                <li><strong>WCAG-aligned accessibility.</strong> Sufficient contrast, clear focus states, adequate touch targets, and keyboard operability are built into the component library.</li>
+                <li><strong>Real contexts of use.</strong> Interfaces were designed for how they're actually used &mdash; a coach on a phone at the side of the pitch, an admin at a desk &mdash; across devices and conditions.</li>
+              </ul>
+            </div>
+            <div class="mt-10 grid sm:grid-cols-2 gap-6">
+              <div class="ph ratio-4-3"><span class="ph-label">Coach Dashboard &mdash; UI Mockup</span></div>
+              <div class="ph ratio-4-3"><span class="ph-label">Player &amp; Admin Views &mdash; UI Mockup</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEXT / CTA ============ -->
+    <section class="border-t border-slate-200">
+      <div class="mx-auto max-w-5xl px-6 py-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div><p class="eyebrow mb-2">Next case study</p><a href="khatib-alami.html" class="font-display font-bold text-2xl text-slate-900 hover:text-gold transition-colors">Khatib &amp; Alami &mdash; Corporate Website Redesign &rarr;</a></div>
+        <a href="index.html#work" class="btn btn-secondary">All work</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="mx-auto max-w-5xl px-6 py-16 flex flex-col sm:flex-row gap-6 justify-between items-start sm:items-center">
+      <div><p class="font-display font-semibold text-slate-100 text-lg">Ahmed Alzahrani</p><p class="font-mono text-xs text-slate-500 mt-1">HCI Specialist &middot; Product &amp; UX/UI Designer</p></div>
+      <a href="mailto:ahmedalzahrani558@gmail.com" class="btn btn-primary">Get in touch <span class="arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('siteNav');
+    const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 8);
+    onScroll(); window.addEventListener('scroll', onScroll, { passive: true });
+    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const items = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) { items.forEach(el => el.classList.add('in')); }
+    else { const io = new IntersectionObserver((es)=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), { threshold:.12, rootMargin:'0px 0px -40px 0px' }); items.forEach(el=>io.observe(el)); }
+  </script>
+</body>
+</html>
