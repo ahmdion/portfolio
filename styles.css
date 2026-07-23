@@ -78,6 +78,11 @@ body {
 .btn-ghost { color: var(--muted); padding-left: .5rem; padding-right: .5rem; }
 .btn-ghost:hover { color: var(--ink); }
 
+/* Compact buttons on very small screens (kept ≥44px tall for touch) */
+@media (max-width: 400px) {
+  .btn { padding: .9375rem 1.1rem; font-size: .875rem; }
+}
+
 /* ---------- Nav underline hover ---------- */
 .nav-link { position: relative; color: var(--muted); text-decoration: none; transition: color .3s var(--ease); }
 .nav-link:hover, .nav-link[aria-current="page"] { color: var(--ink); }
